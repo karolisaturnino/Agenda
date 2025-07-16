@@ -28,7 +28,7 @@
 <hr>
 
 <!-- Tabela de contatos -->
-<table border="1" cellpadding="8">
+<table>
   <thead>
     <tr>
       <th>Nome</th>
@@ -37,7 +37,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr NgFor="let contato of contatos">
+    <tr *ngFor="let contato of contatos">
       <td>{{ contato.nome }}</td>
       <td>{{ contato.telefone }}</td>
       <td>{{ contato.email }}</td>

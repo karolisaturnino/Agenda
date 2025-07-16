@@ -1,7 +1,11 @@
 export class Contato {
-    nome: string
+    nome: string;
+    telefone: string;
+    email: string;
 
-    constructor(nm: string) {
-        this.nome = nm
+    constructor(nome: string, telefone: string, email: string) {
+        this.nome = nome;
+        this.telefone = telefone;
+        this.email = email;
     }
 }
